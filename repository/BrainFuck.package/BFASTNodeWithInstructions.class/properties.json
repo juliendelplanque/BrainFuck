@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-AST",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/2/2016 18:04",
+	"instvars" : [
+		"instructions" ],
+	"name" : "BFASTNodeWithInstructions",
+	"pools" : [
+		 ],
+	"super" : "BFASTNode",
+	"type" : "normal" }

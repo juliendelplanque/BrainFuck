@@ -1,0 +1,1 @@
+An abstract BrainFuck's AST node.

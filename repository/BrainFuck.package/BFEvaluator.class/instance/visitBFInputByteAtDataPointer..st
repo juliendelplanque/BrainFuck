@@ -1,0 +1,3 @@
+visiting
+visitBFInputByteAtDataPointer: aBFInputByteAtDataPointer
+	self replaceCurrentCellValueBy: inputStream next

@@ -1,0 +1,3 @@
+visiting
+visitBFOutputByteAtDataPointer: aBFOutputByteAtDataPointer
+	outputStream << self currentCellValue

@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-AST",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/2/2016 17:55",
+	"instvars" : [
+		 ],
+	"name" : "BFMoveForwardOrJumpInstructionPointer",
+	"pools" : [
+		 ],
+	"super" : "BFASTNodeWithInstructions",
+	"type" : "normal" }

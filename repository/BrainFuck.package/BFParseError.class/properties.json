@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-Error",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/2/2016 18:13",
+	"instvars" : [
+		 ],
+	"name" : "BFParseError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

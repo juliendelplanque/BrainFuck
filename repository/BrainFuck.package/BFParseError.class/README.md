@@ -1,0 +1,1 @@
+I am an error raised when the parsing fail.

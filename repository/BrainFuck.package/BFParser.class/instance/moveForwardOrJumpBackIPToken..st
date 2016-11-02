@@ -1,0 +1,3 @@
+accessing
+moveForwardOrJumpBackIPToken: anObject
+	moveForwardOrJumpBackIPToken := anObject

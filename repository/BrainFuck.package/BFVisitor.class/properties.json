@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-Visitors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/1/2016 15:31",
+	"instvars" : [
+		"tapeSize" ],
+	"name" : "BFVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

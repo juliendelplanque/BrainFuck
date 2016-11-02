@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-AST",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/1/2016 15:29",
+	"instvars" : [
+		 ],
+	"name" : "BFProgram",
+	"pools" : [
+		 ],
+	"super" : "BFASTNodeWithInstructions",
+	"type" : "normal" }

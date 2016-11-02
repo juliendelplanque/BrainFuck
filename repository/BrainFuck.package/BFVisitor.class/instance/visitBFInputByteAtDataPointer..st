@@ -1,0 +1,3 @@
+visiting
+visitBFInputByteAtDataPointer: aBFInputByteAtDataPointer
+	^ self subclassResponsibility

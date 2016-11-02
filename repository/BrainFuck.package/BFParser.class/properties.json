@@ -1,0 +1,22 @@
+{
+	"category" : "BrainFuck-Parser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/1/2016 17:43",
+	"instvars" : [
+		"incrementDPToken",
+		"decrementDPToken",
+		"incrementByteAtDPToken",
+		"decrementByteAtDPToken",
+		"outputByteAtDPToken",
+		"inputByteAtDPToken",
+		"moveForwardOrJumpForwardIPToken",
+		"moveForwardOrJumpBackIPToken",
+		"tokenToASTNodeDictionary" ],
+	"name" : "BFParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

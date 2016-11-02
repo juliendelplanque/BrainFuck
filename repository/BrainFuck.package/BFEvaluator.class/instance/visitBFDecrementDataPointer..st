@@ -1,0 +1,3 @@
+visiting
+visitBFDecrementDataPointer: aBFIncrementDataPointer
+	self previousCell
