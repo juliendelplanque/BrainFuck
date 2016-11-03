@@ -1,0 +1,3 @@
+instructions
+outputByteAtDataPointer
+	self addInstruction: (BFOutputByteAtDataPointer new)

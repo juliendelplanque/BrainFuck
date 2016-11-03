@@ -1,0 +1,3 @@
+instructions
+decrementByteAtDataPointer
+	self addInstruction: (BFDecrementByteAtDataPointer new)

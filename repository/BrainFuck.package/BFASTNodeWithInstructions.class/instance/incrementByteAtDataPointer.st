@@ -1,0 +1,3 @@
+instructions
+incrementByteAtDataPointer
+	self addInstruction: (BFIncrementByteAtDataPointer new)
