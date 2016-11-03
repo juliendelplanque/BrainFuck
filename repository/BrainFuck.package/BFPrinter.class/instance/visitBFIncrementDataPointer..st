@@ -1,0 +1,3 @@
+visiting
+visitBFIncrementDataPointer: aBFIncrementDataPointer
+	output << $>

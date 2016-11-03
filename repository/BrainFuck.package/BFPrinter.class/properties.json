@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-Visitors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/3/2016 18:21",
+	"instvars" : [
+		 ],
+	"name" : "BFPrinter",
+	"pools" : [
+		 ],
+	"super" : "BFTranspiler",
+	"type" : "normal" }
