@@ -1,5 +1,5 @@
 printing
-printOn: aStream
+printCodeOn: aStream
 	self accept: (BFPrinter new
 						output: aStream;
 						yourself)

@@ -14,6 +14,8 @@ parse: aCharStream
 						ifTrue: [ |removed|
 							aCharStream next.
 							removed := parseStack pop.
+							removed class = BFMoveForwardOrJumpInstructionPointer
+								ifFalse: [ BFParseError signal ].
 							parseStack top addInstruction: removed ]
 						ifFalse: [ 
 							node := (self astNodeForToken: aCharStream next).
