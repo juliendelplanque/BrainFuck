@@ -1,5 +1,5 @@
 instructions
-moveForwardOrJump: aBlock
+whileCurrentCellIsNotZero: aBlock
 	| inst |
 	inst := BFMoveForwardOrJumpInstructionPointer new.
 	aBlock value: inst.
