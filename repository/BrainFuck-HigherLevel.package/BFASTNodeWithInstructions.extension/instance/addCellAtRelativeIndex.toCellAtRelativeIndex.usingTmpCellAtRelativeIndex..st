@@ -2,24 +2,19 @@
 addCellAtRelativeIndex: x toCellAtRelativeIndex: y usingTmpCellAtRelativeIndex: tmp
 	"x = x + y"
 	self
-		goToCellAtRelativeIndex: tmp andDo: [ :prog | prog currentCellToZero ];
+		goToCellAtRelativeIndex: tmp andDo: #currentCellToZero;
 		goToCellAtRelativeIndex: y andDo: [ :prog |
 			prog whileCurrentCellIsNotZero: [ :sub |
 				sub
 					goToCellAtRelativeIndex: y negated;
-					goToCellAtRelativeIndex: x andDo: [ :subprog |
-						subprog incrementByteAtDataPointer ];
-					goToCellAtRelativeIndex: tmp andDo: [ :subprog |
-						subprog incrementByteAtDataPointer ];
-					goToCellAtRelativeIndex: y andDo: [ :subprog |
-						subprog decrementByteAtDataPointer ];
+					goToCellAtRelativeIndex: x andDo: #incrementByteAtDataPointer;
+					goToCellAtRelativeIndex: tmp andDo: #incrementByteAtDataPointer;
+					goToCellAtRelativeIndex: y andDo: #decrementByteAtDataPointer;
 					goToCellAtRelativeIndex: y ] ];
 		goToCellAtRelativeIndex: tmp andDo: [ :prog |
 			prog whileCurrentCellIsNotZero: [ :sub |
 				sub
 					goToCellAtRelativeIndex: tmp negated;
-					goToCellAtRelativeIndex: y andDo: [ :subprog |
-						subprog incrementByteAtDataPointer ];
-					goToCellAtRelativeIndex: tmp andDo: [ :subprog |
-						subprog decrementByteAtDataPointer ];
+					goToCellAtRelativeIndex: y andDo: #incrementByteAtDataPointer;
+					goToCellAtRelativeIndex: tmp andDo: #decrementByteAtDataPointer;
 					goToCellAtRelativeIndex: tmp ] ]

@@ -1,15 +1,20 @@
 *BrainFuck-HigherLevel
-copyCellAtRelativeIndex: y intoCellAtRelativeIndex: x usingTmpCellAtRelativeIndex: tmp
-	"x = y"
+swapCellAtRelativeIndex: x withCellAtRelativeIndex: y usingTmpCellAtRelativeIndex: tmp
+	"swap x, y"
 	self
 		goToCellAtRelativeIndex: tmp andDo: #currentCellToZero;
-		goToCellAtRelativeIndex: x andDo: #currentCellToZero;
+		goToCellAtRelativeIndex: x andDo: [ :prog |
+			prog whileCurrentCellIsNotZero: [ :sub |
+				sub
+					goToCellAtRelativeIndex: x negated;
+					goToCellAtRelativeIndex: tmp andDo: #incrementByteAtDataPointer;
+					goToCellAtRelativeIndex: x;
+					decrementByteAtDataPointer ] ];
 		goToCellAtRelativeIndex: y andDo: [ :prog |
 			prog whileCurrentCellIsNotZero: [ :sub |
 				sub
 					goToCellAtRelativeIndex: y negated;
 					goToCellAtRelativeIndex: x andDo: #incrementByteAtDataPointer;
-					goToCellAtRelativeIndex: tmp andDo: #incrementByteAtDataPointer;
 					goToCellAtRelativeIndex: y;
 					decrementByteAtDataPointer ] ];
 		goToCellAtRelativeIndex: tmp andDo: [ :prog |

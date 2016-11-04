@@ -1,0 +1,3 @@
+*BrainFuck-HigherLevel
+goToFirstZeroCellOnTheRight
+	self whileCurrentCellIsNotZero: #incrementDataPointer
