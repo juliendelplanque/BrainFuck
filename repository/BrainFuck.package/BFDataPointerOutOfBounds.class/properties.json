@@ -1,0 +1,14 @@
+{
+	"category" : "BrainFuck-Error",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 11/5/2016 12:26",
+	"instvars" : [
+		 ],
+	"name" : "BFDataPointerOutOfBounds",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }
